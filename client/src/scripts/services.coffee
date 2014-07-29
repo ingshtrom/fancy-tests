@@ -1,0 +1,1 @@
+services = angular.module 'fancy-tests.services', []
