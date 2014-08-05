@@ -1,20 +1,4 @@
-controllerModule = angular.module 'fancy-tests.controllers', []
-
-controllerModule.controller 'MainController', [
-  '$scope'
-  ($scope) ->
-]
-
-controllerModule.controller 'OptionsController', [
-  '$scope'
-  '$http'
-  ($scope, $http) ->
-    $scope.xAxisOptions = []
-    $scope.yAxisOptions = []
-    ...
-]
-
-controllerModule.controller 'ChartController', [
+fancyTests.controller 'chart-controller', [
   '$scope'
   ($scope) ->
     chartSelectors = ['#main-chart']

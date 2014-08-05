@@ -2,9 +2,6 @@ fancyTests = angular.module 'fancy-tests', [
   'ui.bootstrap'
   'ngRoute'
   'ngAnimate'
-  'fancy-tests.services'
-  'fancy-tests.filters'
-  'fancy-tests.controllers'
 ]
 
 fancyTests.config [
@@ -12,7 +9,7 @@ fancyTests.config [
   '$locationProvider'
   ($route, $location) ->
     $route
-      .when '/', {templateUrl: 'main.html', controller: 'MainController'}
+      .when '/', {templateUrl: 'main.html', controller: 'main-controller'}
       .otherwise {redirectTo: '/'}
     $location.html5Mode true
 ]

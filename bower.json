@@ -1,0 +1,38 @@
+{
+  "name": "fancy-tests",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ingshtrom/fancy-tests",
+  "authors": [
+    "ingshtrom <alex.hokanson@mysticgear.com>"
+  ],
+  "description": "graph test results",
+  "main": "pub/client/src/scripts/index.js",
+  "keywords": [
+    "test",
+    "graph"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "0.11.0",
+    "angular-ui-select2": "0.0.5",
+    "angular-ui-calendar": "0.8.1",
+    "bootstrap": "3.2.0",
+    "jquery": "2.1.1",
+    "lodash": "2.4.1",
+    "chartjs": "0.2.0",
+    "angular": "1.2.21",
+    "angular-animate": "1.2.21",
+    "angular-route": "1.2.21",
+    "moment": "2.8.1"
+  },
+  "resolutions": {
+    "jquery": "2.1.1"
+  }
+}

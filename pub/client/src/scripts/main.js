@@ -1,12 +1,12 @@
 var fancyTests;
 
-fancyTests = angular.module('fancy-tests', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'fancy-tests.services', 'fancy-tests.filters', 'fancy-tests.controllers']);
+fancyTests = angular.module('fancy-tests', ['ui.bootstrap', 'ngRoute', 'ngAnimate']);
 
 fancyTests.config([
   '$routeProvider', '$locationProvider', function($route, $location) {
     $route.when('/', {
       templateUrl: 'main.html',
-      controller: 'MainController'
+      controller: 'main-controller'
     }).otherwise({
       redirectTo: '/'
     });

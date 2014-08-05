@@ -35,7 +35,8 @@
     "grunt-coffeelint": ">=0.0.10",
     "grunt-contrib-coffee": ">=0.10.1",
     "grunt-contrib-copy": ">=0.5.0",
-    "grunt-contrib-jade": ">=0.12.0"
+    "grunt-contrib-jade": ">=0.12.0",
+    "grunt-bower-concat": ">=0.3.0"
   },
   "preferGlobal": false,
   "private": false,

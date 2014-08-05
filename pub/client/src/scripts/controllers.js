@@ -1,12 +1,4 @@
-var controllerModule;
-
-controllerModule = angular.module('fancy-tests.controllers', []);
-
-controllerModule.controller('MainController', ['$scope', function($scope) {}]);
-
-controllerModule.controller('OptionsController', ['$scope', '$http', function($scope, $http) {}]);
-
-controllerModule.controller('ChartController', [
+fancyTests.controller('chart-controller', [
   '$scope', function($scope) {
     var bindResizeHandler, chartSelectors, getChartContext, loadChart, mockData, mockOptions, parentSelector, resizeHandler;
     chartSelectors = ['#main-chart'];
@@ -82,5 +74,18 @@ controllerModule.controller('ChartController', [
       loadChart(ctx, mockData, mockOptions);
       return bindResizeHandler(obj);
     });
+  }
+]);
+
+fancyTests.controller('main-controller', ['$scope', function($scope) {}]);
+
+fancyTests.controller('options-controller', [
+  '$scope', 'options-service', function($scope, _options) {
+    $scope.options = {};
+    $scope.$on('options.update', function(event) {
+      console.log('updating options');
+      return $scope.options = _options.options;
+    });
+    return $scope.options = _options.options;
   }
 ]);

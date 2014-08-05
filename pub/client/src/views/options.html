@@ -1,3 +1,11 @@
 
-<div class="list-group options-container"><a class="list-group-item"></a><a class="list-group-item"></a><a class="list-group-item"></a><a class="list-group-item"></a><a class="list-group-item"></a>
+<div ng-controller="options-controller" class="options-container">
+  <div class="list-group"><a id="options-axises" class="list-group-item">
+      <select id="options-x-axis" ng-model="select2" data-placeholder="x-axis" class="ui-select2">
+        <option ng-repeat="option in options.xAxis" value="{{ option }}">{{ option }}</option>
+      </select>
+      <select id="options-y-axis" ng-model="select2" data-placeholder="y-axis" class="ui-select2">
+        <option ng-repeat="option in options.yAxis" value="{{ option }}">{{ option }}</option>
+      </select></a><a class="list-group-item"></a><a class="list-group-item"></a><a class="list-group-item"></a><a class="list-group-item"></a>
+  </div>
 </div>

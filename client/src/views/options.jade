@@ -1,11 +1,18 @@
-.list-group.options-container
-  //- X/Y Axises
-  a.list-group-item
-  //- Names
-  a.list-group-item
-  //- Tags
-  a.list-group-item
-  //- Attributes
-  a.list-group-item
-  //- Date Range
-  a.list-group-item
+.options-container(ng-controller='options-controller')
+  .list-group
+    //- X/Y Axises
+    a#options-axises.list-group-item
+      select#options-x-axis.ui-select2(ng-model='select2', data-placeholder='x-axis')
+        option(ng-repeat='option in options.xAxis', value='{{ option }}')
+          {{ option }}
+      select#options-y-axis.ui-select2(ng-model='select2', data-placeholder='y-axis')
+        option(ng-repeat='option in options.yAxis', value='{{ option }}')
+          {{ option }}
+    //- Names
+    a.list-group-item
+    //- Tags
+    a.list-group-item
+    //- Attributes
+    a.list-group-item
+    //- Date Range
+    a.list-group-item
